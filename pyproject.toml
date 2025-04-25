@@ -7,7 +7,7 @@ name = "splitexpense"
 version = "0.1.0"
 description = "A Tkinter-based app to split expenses among people and export summaries to Excel."
 authors = [
-    { name="Pancham (MuddyHope)", email="ljpancham@gmail.com" }
+    { name = "Pancham (MuddyHope)", email = "ljpancham@gmail.com" }
 ]
 readme = "README.md"
 license = { file = "LICENSE" }
@@ -20,3 +20,5 @@ dependencies = [
 Homepage = "https://github.com/MuddyHope/split_expense"
 Repository = "https://github.com/MuddyHope/split_expense"
 
+[project.scripts]
+splitexpense = "split_expense.app:main"
