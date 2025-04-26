@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import ttk, messagebox
+from tkinter import ttk, messagebox, filedialog
 import pandas as pd
 
 
@@ -203,11 +203,15 @@ class SplitExpenseApp(tk.Tk):
         df_transactions = pd.DataFrame(transactions)
 
         # Save to Excel: two sheets "Items" and "Summary"
-        output_file = "/Users/apple/Documents/split_expenses.xlsx"
+        output_file = filedialog.asksaveasfilename(
+            defaultextension=".xlsx",
+            filetypes=[("Excel files", "*.xlsx"), ("All files", "*.*")]
+        )
+        if not output_file:
+            return  # User cancelled
         with pd.ExcelWriter(output_file) as writer:
             df_items.to_excel(writer, sheet_name="Items", index=False)
             df_transactions.to_excel(writer, sheet_name="Summary", index=False)
-
         messagebox.showinfo("Exported", f"Data exported successfully to {output_file}")
 
     def show_summary(self):
