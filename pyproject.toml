@@ -7,7 +7,7 @@ include = ["split_expense"]
 
 [project]
 name = "splitexpense"
-version = "0.1.0"
+version = "0.1.1"
 description = "A Tkinter-based app to split expenses among people and export summaries to Excel."
 authors = [
     { name = "Pancham (MuddyHope)", email = "ljpancham@gmail.com" }
