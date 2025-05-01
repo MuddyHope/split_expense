@@ -1,3 +1,5 @@
+[![PyPI Downloads](https://static.pepy.tech/badge/splitexpense)](https://pepy.tech/projects/splitexpense)
+
 # SplitExpense
 
 **SplitExpense** is a lightweight, user-friendly desktop application built with Python's Tkinter library. It simplifies the process of splitting group expenses, making it ideal for roommates, travel groups, or any situation where shared expenses occur. The app allows users to add participants, record expenses, and instantly calculate who owes whom. Additionally, it offers the capability to export detailed and summary reports to Excel for easy sharing and record-keeping.
